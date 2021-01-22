@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    overflow:hidden;
+}
+.gameContainer{
+    background-image:url("file:///C:/Users/LENOVO/Desktop/webdevelopment/game/background%20(1).PNG");
+    background repeat:no-repeat;
+    background-size:100vw 100vh;
+    width:100%;
+    height:100vh;
+}
+.boy{
+    background-image:url("file:///C:/Users/LENOVO/Desktop/webdevelopment/game/boy.webp");
+    background repeat:no-repeat;
+    background-size:cover;
+    width:233px;
+    height:136px;
+    position:absolute;
+    bottom:10px;
+    left:-34px;
+}
+.zombie{
+    background-image:url("file:///C:/Users/LENOVO/Desktop/webdevelopment/game/zomby.webp");
+    background repeat:no-repeat;
+    background-size:cover;
+    width:133px;
+    height:130px;
+    position:absolute;
+    bottom:0px;
+    right:540px;
+}
+.animateBoy{
+    animation:boy 0.6s linear;
+}
+.zombieAni{
+    animation:zombieAni 5s linear infinite;
+}
+.gameOver{
+    position:relative;
+    top:233px;
+    font-size:53px;
+    text-align:center;
+    font-family:sans-serif;
+    color:grey;
+    font-weight:bold;
+}
+.welcome{
+    width:250px;
+    position:relative;
+    top:30px;
+    font-size:30px;
+    background:#7fd4e8;
+    font-family:sans-serif;
+    color:#0a5855;
+    left:10px;
+    padding:10px;
+}
+#scoreContd{
+    position:absolute;
+    right:45px;
+    top:31px;
+    border:2px solid black;
+    font-family:sans-serif;
+    color:grey;
+    font-weight:bold;
+    padding:10px;
+    font-size:25px;
+    border-radius:10px;
+}
+@keyframes boy{
+    0%{
+        bottom:0px;
+    }
+    50%{
+        bottom:422px;
+        
+
+    }
+    100%{
+        bottom:0px;
+        
+    }
+}
+@keyframes zombieAni{
+    0%{
+        left:100vw;
+    }
+    100%{
+        left:-10vw;
+    }
+}
+
+.gameOver{
+    visibility:hidden;
+}
+h5{
+    font-size:20px;
+}
